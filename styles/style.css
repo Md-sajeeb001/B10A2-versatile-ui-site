@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 :root{
     --backdrop-card-color: rgba(48, 48, 48, 0.54);
@@ -16,23 +16,275 @@
     --bg-body-color: #000000;
 }
 body{
-    max-width: 95%;
-    border: 1px solid var(--text-color);
+    /* max-width: 95%; */
+    /* border: 1px solid var(--text-color); */
     margin: 0 auto;
     background-color: var(--bg-body-color);
 }
 
 /* ============================ */
 .header-section{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    padding: 3rem 8%;
+    background: linear-gradient(0.00deg, rgb(17, 17, 17,0.2),rgba(119, 119, 119, 0.2) 0);
+    padding: 4rem 8% 0 10%;
 }
 .navber{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* padding: 0 3rem 0 0; */
 }
 .navber .logo{
     color: var(--btn-color);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.navber ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #414141;
+    gap: 1rem;
+    border-radius: 1.3rem;
+    padding: 0.15rem;
+}
+.navber ul li{
+    padding: .6rem 2rem;
+    border-radius: 1.2rem;
+    border: none;
+}
+.navber ul li a{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.active-color{
+    background-color: var(--btn-color);
+    padding: .50rem 0;
+    cursor: pointer;
+}
+.header-banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 4rem 0 0;
+}
+.header-content{
+    max-width: 500px; 
+}
+.header-content h2{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1.6rem;
+}
+.header-content p{
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    line-height: 1.8rem;
+}
+.btn{
+    padding: .8rem 2.6rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn:last-child{
+    background-color: transparent;  
+    padding: .7rem 2.6rem;
+    border: 2px solid var(--text-color);  
+}
+.header-image{
+    position: relative;
+}
+.dropdown-cart{
+    position: absolute;
+    width: 190px;
+    height: 90px;
+    background-color: rgba(80, 80, 80, 0.2);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    top: 70%;
+    left: -6.5rem;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+.circel{
+    width: 40px;
+    height: 40px;
+    background-color: var(--btn-color);
+    border-radius: 50%;
+}
+.dropdown-cart-text h3{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 800;
+}
+.dropdown-cart-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+.dropupper-cart{
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    background-color: rgba(80, 80, 80, 0.2);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    top: 26%;
+    left: 15rem;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+.dropupper-cart h2{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.dropupper-cart p{
+    font-size: 13px;
+    color: var(--secondary-text-color);
+}
 
+/* ----------------CHANGE YOUR HABBIT SECTION START HERE------------------- */
+
+.main-container-section{
+    max-width: 90%;
+    border: 1px solid var(--text-color);
+    margin: 3rem auto;
+}
+.change-habbit-discription{
+    text-align: center;
+    padding: 0 1rem;
+}
+.change-habbit-discription h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+.change-habbit-discription p{
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+}
+.change-habbit-imges{
+    display: grid;
+    grid-gap: 3.4rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 10%;
+    margin-left: 2rem;
+}
+.change-habbit-imges img{
+    border-radius: 50%;
+    border: 1px solid #bdbdbdd5;
+}
+.change-habbit-text{
+    text-align: center;
+    padding: 1rem 0;
+}
+.change-habbit-text h4{
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+.change-habbit-text span{
+    color: var(--secondary-text-color);
+    font-size: .89rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+/* ----------------CHANGE YOUR HABBIT SECTION END HERE------------------- */
+
+/* ----------------RUN SECTION END HERE------------------- */
+
+.run-section{
+    padding: 3rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* ----------------RUN SECTION END HERE------------------- */
+
+/* ----------Media Quary section start here---------- */
+@media screen and (min-width: 360px) and (max-width:576px) {
+    .header-section{
+        aspect-ratio: cover;
+        padding: 3rem 4% 0 6%;
+    }
+    .navber{
+        padding: 2rem 0;
+    }
+    .navber ul{
+        display: none;
+    }
+    .header-banner-section{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .header-content{
+        width: 100%;
+    }
+    .header-content h2{
+        font-size: 2.6rem;
+    }
+    .header-content p{
+        margin: 2.5rem 0;
+        max-width: 18rem;
+    }
+    .btn{
+        padding: .8rem 2.8rem;
+    }
+    .span{
+        display: none;
+    }
+    .btn:last-child{
+        padding: .7rem 1.7rem;
+    }
+    .header-image img{
+        margin-top: 5rem;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    .dropdown-cart{
+        top: 48.5%;
+        left: .8rem;
+    }
+    .dropupper-cart{
+        top: 18.8%;
+        left: 12.5rem;
+    }
+    .change-habbit-discription{
+        text-align: center;
+    }
+    .change-habbit-discription h2{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+    .change-habbit-imges{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 3rem;
+        padding: 1rem 0;
+        margin-right: 2.5rem;
+        margin-top: 2rem;
+    }
+    .change-habbit-imges img{
+        margin-left: 4rem;
+    }
+    .change-habbit-discription{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
